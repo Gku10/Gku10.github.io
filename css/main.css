@@ -1,13 +1,22 @@
 :root {
-    --color-main: rgba(30, 29, 88, 121);
-    --text-color1: rgba(185, 140, 67, 112);
-    --text-color2: rgba(168, 169, 173, 7);
-    --text-color3: rgba(46, 48, 141, 159);
+    --color-main: rgb(30, 29, 88);
+    --text-color1: rgb(185, 140, 67);
+    --text-color2: rgb(168, 169, 173);
+    --text-color3: rgb(46, 48, 141);
 }
 
 
 body {
-    background-color: var(--color-main);
+    height: 100vh;
+    width: 100vw;
+    
+    overflow: hidden;
+
+    background: linear-gradient(
+        var(--color-main) 0,
+        var(--color-main) 80vh,
+        grey 95vh,
+        black);
     margin: 0 auto;
 }
 
@@ -20,11 +29,13 @@ div {
 model-viewer {
     margin: auto;
 
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
     position: absolute;
     top: 25;
+
+    background-color: transparent;
 }
 
 
@@ -49,7 +60,7 @@ span {
 
 @media (min-width: 768px) {
     h1 {
-        font-size: calc(25vw - 10vh);
+        font-size: 125px;
     }
 }
 
