@@ -16,7 +16,7 @@ body {
         var(--color-main) 0,
         var(--color-main) 80vh,
         grey 95vh,
-        black);
+        var(--color-main));
     margin: 0 auto;
 }
 
@@ -72,10 +72,17 @@ span {
     body {
         background: linear-gradient(
         var(--color-main) 0,
-        var(--color-main) 50vh,
-        grey 70vh,
-        black 75vh,
+        var(--color-main) 75vh,
+        grey 94vh,
+        black 100vh,
         var(--color-main) 100vh);
+    }
+
+    model-viewer {
+        max-width: 70vw;
+        max-height: 70vh;
+        top: 25vh;
+        left: 15vw;
     }
 
 }
