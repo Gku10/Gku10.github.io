@@ -68,4 +68,14 @@ span {
     h1 {
         font-size: calc(25vh - 10vw);
     }
+
+    body {
+        background: linear-gradient(
+        var(--color-main) 0,
+        var(--color-main) 50vh,
+        grey 70vh,
+        black 75vh,
+        var(--color-main) 100vh);
+    }
+
 }
