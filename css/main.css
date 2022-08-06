@@ -197,8 +197,14 @@ model-viewer {
         var(--info-color2) 100%);
     }
     
+    p {
+        font-size: .75em;
+    }
+    
     ul {
         font-size: .75em;
+        top: 5%;
+        right: 1%;
     }
 }
 
