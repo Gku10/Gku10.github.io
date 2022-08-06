@@ -203,8 +203,8 @@ model-viewer {
     
     ul {
         font-size: .75em;
-        top: 5%;
-        right: -5px;
+        top: 0;
+        right: 0;
     }
 }
 
