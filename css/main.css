@@ -186,6 +186,7 @@ model-viewer {
         width: 100%;
     
         position: absolute;
+        z-index: 2;
         top: 0;
     
         background: linear-gradient(
