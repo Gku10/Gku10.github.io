@@ -168,7 +168,7 @@ model-viewer {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1500px) {
     /* Slideshow container */
     #slideshow-container {
     width: 25%;
