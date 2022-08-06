@@ -85,6 +85,8 @@ p {
     inline-size: max-content;
     color: #BFC1E3;
     margin: auto;
+
+    justify-content: center;
 }
 
 
@@ -172,7 +174,7 @@ model-viewer {
     /* Slideshow container */
     #slideshow-container {
     width: 25%;
-    height: 60%;
+    height: 50%;
 
     position: absolute;
     top: 12.5%;
@@ -186,7 +188,6 @@ model-viewer {
         width: 100%;
     
         position: absolute;
-        z-index: 2;
         top: 0;
     
         background: linear-gradient(
