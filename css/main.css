@@ -3,86 +3,202 @@
     --text-color1: rgb(185, 140, 67);
     --text-color2: rgb(168, 169, 173);
     --text-color3: rgb(46, 48, 141);
+
+    /*Contat info colors*/
+    --info-color1: rgb(106, 108, 165);
+    --info-color2: rgb(120, 122, 171);
+    --whatsapp-color: #25D366;
+}
+
+* {
+    box-sizing:border-box;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    overflow: hidden;
 }
 
 
 body {
-    height: 100vh;
-    width: 100vw;
-    
-    overflow: hidden;
+    width: 100%;
+    height: 1001vh;
 
-    background: linear-gradient(
-        var(--color-main) 0,
-        var(--color-main) 80vh,
-        grey 95vh,
-        var(--color-main));
+    margin: auto;
+
+    background-color: var(--color-main);
+}
+
+#content {
+    width: 80vw;
+    height: 80vh;
+
     margin: 0 auto;
+
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+}
+
+#image {
+    height: 90%;
+    width: 100%;
+
+    background: radial-gradient(
+    circle at center,
+    #1E1D57 0,
+    #252567 10%,
+    #4E4E98 60%,
+    #57589F 100%);
+}
+
+#información {
+    color: #FBEE93;
+
+    position: absolute;
+    z-index: 2;
+    right: 1%;
+    top: 25%;
 }
 
 
-div {
-    margin: auto;
-}
 
-
-model-viewer {
-    margin: auto;
-
-    height: 100%;
+#contact-info {
+    height: 10%;
     width: 100%;
 
     position: absolute;
-    top: 25;
+    top: 90%;
 
-    background-color: transparent;
+    background: linear-gradient(
+    var(--info-color1) 0,
+    var(--info-color1) 10%,
+    var(--info-color2) 10%,
+    var(--info-color2) 100%);
 }
 
 
-h1 {
+p {
     inline-size: max-content;
+    color: #BFC1E3;
+    margin: auto;
+}
 
-    font-weight: bold;
-    font-family: 'Classic Grotesque';
 
-    color: var(--text-color1);
+/*3D Model*/
+
+model-viewer {
+    width: 50%;
+    height: 50%;
 
     position: absolute;
-    left: 28vw;
-    top: 25vh;
+    z-index: 0;
+    top: 25%;
+    left: 25%;
 }
 
+/*3D Model*/
 
-span {
-    color: var(--text-color2);
+
+.social-icons {
+    display: grid;
+    font-size: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: center;
+
+    inline-size: max-content;
+
+    color: var(--whatsapp-color);
+}
+  
+  
+
+/*Pictures*/
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
 }
 
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+    
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+    
+@keyframes fade {
+    0% {
+        opacity: 0;
+        }
+    20% {
+        opacity: 1;
+        }
+   
+    80% {
+        opacity: 1;
+        }
+    100% {
+        opacity: 0;
+        }           
+}
+        
+@media (min-width: 750px) {
+    /* Slideshow container */
+    #slideshow-container {
+    width: 25%;
+    height: 25%;
 
-@media (min-width: 768px) {
-    h1 {
-        font-size: 125px;
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
+    z-index: 2;
+    margin: auto;
     }
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: calc(25vh - 10vw);
+@media (max-width: 750px) {
+    /* Slideshow container */
+    #slideshow-container {
+    width: 25%;
+    height: 50%;
+
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
+    z-index: 2;
+    margin: auto;
     }
 
-    body {
+    #contact-info {
+        height: 10%;
+        width: 100%;
+    
+        position: absolute;
+        top: 0;
+    
         background: linear-gradient(
-        var(--color-main) 0,
-        var(--color-main) 75vh,
-        grey 94vh,
-        black 100vh,
-        var(--color-main) 100vh);
+        var(--info-color1) 0,
+        var(--info-color1) 10%,
+        var(--info-color2) 10%,
+        var(--info-color2) 100%);
     }
-
-    model-viewer {
-        max-width: 70vw;
-        max-height: 70vh;
-        top: 25vh;
-        left: 15vw;
+    
+    ul {
+        font-size: .75em;
     }
-
 }
+
+
+/*Pictures end*/
