@@ -204,7 +204,7 @@ model-viewer {
     ul {
         font-size: .75em;
         top: 5%;
-        right: 1%;
+        right: -5px;
     }
 }
 
