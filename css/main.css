@@ -47,6 +47,12 @@ body {
     border: 2px solid var(--secondary-color);
 
     color: var(--color2);
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
     background: radial-gradient(
         circle at  50% 0,
