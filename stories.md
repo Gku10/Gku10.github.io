@@ -1,5 +1,5 @@
 ---
-<title>Zotz's Stories</title>
+title: Zotz's Stories
 ---
 
 <!DOCTYPE html>
