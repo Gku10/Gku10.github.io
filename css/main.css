@@ -59,7 +59,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 
     background: radial-gradient(
         circle at  50% 0,
@@ -115,11 +115,15 @@ body {
 
 #intro h1 {
     color: var(--title-color);
+
     margin: 0;
+    max-width: 100%;
 }
 
 #intro h2 {
     margin: 10px 0 auto auto;
     color: var(--mayan-Green);
     font-size: 1em;
+    max-width: 100%;
 }
+
