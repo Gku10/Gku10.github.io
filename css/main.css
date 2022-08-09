@@ -126,7 +126,7 @@ body {
     max-width: 100%;
 }
 
-#intro h2 {
+#intro p {
     margin: 10px 0 auto auto;
     color: var(--mayan-Green);
     font-size: 1em;
