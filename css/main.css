@@ -9,10 +9,7 @@
 
 * {
     box-sizing: border-box;
-
     margin: auto;
-
-    border: 2px solid gold;
 }
 
 body {
@@ -22,8 +19,6 @@ body {
     margin: auto;
 
     color: var(--color2); 
-    
-    border: 2px solid purple;
 }
 
 #backGround {
@@ -79,8 +74,6 @@ body {
 
 
 #content {
-    border: 2px solid ghostwhite;
-    
     margin: auto;
 
     padding-top: 1%;
@@ -93,6 +86,4 @@ body {
     margin-top: 6.5vh;
 
     max-width: 80vw;
-
-    border: 2px solid aquamarine;
 }
