@@ -8,6 +8,12 @@
     --mayan-Blue: #4C9FE2;
 }
 
+@import "{{ site.theme }}";
+
+header {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
 
