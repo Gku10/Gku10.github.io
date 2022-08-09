@@ -1,5 +1,5 @@
 ---
-title: Zotz's Stories
+title: Zotz's Domain
 ---
 <html lang="en">
 <head>
