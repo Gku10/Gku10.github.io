@@ -16,7 +16,7 @@ header {
 
 * {
     box-sizing: border-box;
-
+    max-width: 100;
     margin: auto;
 }
 
@@ -126,10 +126,14 @@ body {
     max-width: 100%;
 }
 
-#intro p {
+#intro h2 {
     margin: 10px 0 auto auto;
     color: var(--mayan-Green);
     font-size: 1em;
-    max-width: 100%;
+}
+
+#intro p {
+    margin: 10px 0 auto auto;
+    color: var(--color2);
 }
 
