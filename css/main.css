@@ -3,13 +3,19 @@
     --main-complement: rgb(189 39 26);
     --secondary-color: #101010;
     --color2: #666666;
-
-    
+    --title-color: goldenrod;
+    --mayan-Green: 	#00B998;
+    --mayan-Blue: #4C9FE2;
 }
 
 * {
     box-sizing: border-box;
+
     margin: auto;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -53,6 +59,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 
     background: radial-gradient(
         circle at  50% 0,
@@ -63,7 +70,7 @@ body {
     height: 6vh;
     width: 100%;
 
-    margin: auto;
+    margin: 0;
 
     position: fixed;
     z-index: 1;
@@ -72,7 +79,8 @@ body {
 
 #navbar p {
     inline-size: max-content;
-    display: inline-block;
+
+    color: var(--mayan-Blue);
 
     border: 2px solid;
 }
@@ -91,5 +99,27 @@ body {
     margin: auto;
     margin-top: 6.5vh;
 
+    padding-top: 15vh;
+
     max-width: 80vw;
+}
+
+#intro {
+    text-align: center;
+    inline-size: max-content;
+
+    margin: auto;
+
+    justify-content: center;
+}
+
+#intro h1 {
+    color: var(--title-color);
+    margin: 0;
+}
+
+#intro h2 {
+    margin: 10px 0 auto auto;
+    color: var(--mayan-Green);
+    font-size: 1em;
 }
