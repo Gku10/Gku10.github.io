@@ -137,3 +137,13 @@ body {
     color: var(--color2);
 }
 
+/*Editting for stories*/
+#Links a {
+    text-decoration: none;
+    color: var(--title-color);
+    inline-size: max-content;
+
+    margin: 10px 0 auto auto;
+
+    text-align: center;
+}
