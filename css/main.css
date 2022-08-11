@@ -143,6 +143,11 @@ body {
     text-align: center;
 }
 
+#Links h1 {
+    text-align: center;
+    color: var(--title-color);
+}
+
 .frame {
     height: 15%;
     width: 75%;
