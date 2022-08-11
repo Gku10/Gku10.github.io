@@ -142,3 +142,20 @@ body {
 
     text-align: center;
 }
+
+.frame {
+    height: 15%;
+    width: 75%;
+
+    margin: 5% auto;
+
+    border: 1.5px solid var(--mayan-Blue);
+    border-radius: 5px;
+}
+
+.frame p {
+    margin: 5px 5px auto auto;
+}
+span {
+    color: var(--mayan-Green);
+}
