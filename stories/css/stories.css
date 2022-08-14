@@ -8,7 +8,6 @@
     --mayan-Blue: #4C9FE2;
 }
 
-@import "{{ site.theme }}";
 
 header {
     display: none;
@@ -22,6 +21,10 @@ header {
 
 html {
     font-size: 16px;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -59,6 +62,8 @@ body {
     border: 2px solid var(--secondary-color);
 
     color: var(--color2);
+
+    
     
     display: flex;
     flex-wrap: wrap;
@@ -87,9 +92,12 @@ body {
     inline-size: max-content;
 
     color: var(--mayan-Blue);
+    
 
     border: 2px solid;
 }
+
+
 /*End of Navbar*/
 
 
@@ -105,12 +113,12 @@ body {
     margin: auto;
     margin-top: 6.5vh;
 
-    padding-top: 15vh;
+    padding-top: 5vh;
 
     max-width: 80vw;
 }
 
-#intro {
+#Story {
     text-align: center;
     inline-size: max-content;
 
@@ -119,20 +127,44 @@ body {
     justify-content: center;
 }
 
-#intro h1 {
+#Story h1 {
     color: var(--title-color);
 
     margin: 0;
     max-width: 100%;
 }
 
-#intro h2 {
-    margin: 10px 0 auto auto;
-    color: var(--mayan-Green);
-    font-size: 1em;
+.Paper {
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+
+    margin: 20px auto;
+
+    max-width: 100%;
 }
 
-#intro p {
-    margin: 10px 20px auto auto;
+.Paper p {
     color: var(--mayan-Green);
+
+    inline-size: max-content;
+    text-align: justify;
+
+    margin: 25px auto;
+
+    max-width: 90%;
+
 }
+
+
+/*Media Queries*/
+@media (min-width: 100px) {
+
+    #Story {
+        max-width: 70%;
+    }
+    
+}
+
+/*End of Media Queries*/
