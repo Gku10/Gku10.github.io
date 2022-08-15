@@ -59,7 +59,7 @@ body {
 
 /*Navigation bar code*/
 #navbar {
-    border: 2px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 
     color: var(--color2);
     
@@ -92,7 +92,7 @@ body {
 
     color: var(--mayan-Blue);
 
-    border: 2px solid;
+    border: 0.5px solid;
 }
 /*End of Navbar*/
 
@@ -188,7 +188,7 @@ body {
 .Paper {
     background-color: rgba(0, 0, 0, 0.3);
 
-    border: 2px solid var(--secondary-color);
+    border: 0.5px solid var(--secondary-color);
     border-radius: 10px;
 
     margin: 20px auto;
