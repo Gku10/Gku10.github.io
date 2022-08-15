@@ -15,7 +15,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 h1, h2, p, a {
@@ -120,6 +120,10 @@ body {
 
     margin: auto;
 
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+
     justify-content: center;
 }
 
@@ -191,7 +195,9 @@ body {
     border: 0.5px solid var(--secondary-color);
     border-radius: 10px;
 
-    margin: 20px auto;
+    margin: auto;
+
+    margin-top: 20px;
 
     max-width: 100%;
 
