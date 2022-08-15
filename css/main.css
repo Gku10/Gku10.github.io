@@ -83,6 +83,7 @@ body {
 
 #navbar p {
     inline-size: max-content;
+    max-height: 100%;
 
     color: var(--mayan-Blue);
 
@@ -135,6 +136,48 @@ body {
     color: var(--mayan-Blue);
 }
 
+
+/*Stories #Links*/
+#Links .Paper {
+    border-color: var(--mayan-Blue);
+
+    justify-content: center;
+}
+
+#Links h1 {
+    color: var(--title-color);
+
+    margin: 0 auto;
+    max-width: 100%;
+
+    text-align: center;
+}
+
+#Links h2 {
+    color: var(--title-color);
+
+    text-align: center;
+
+    margin: auto;
+    margin-top: 5px;
+    max-width: 100%;
+
+    font-size: 1.25rem;
+}
+
+#Links p {
+    margin: 10px auto;
+
+    text-align: center;
+    inline-size: max-content;
+
+    color: var(--mayan-Green);
+
+    max-width: 90%;
+    max-height: 50%;
+}
+/*End of Stories #Links*/
+
 /*Helpful Links*/
 
 .Paper {
@@ -146,12 +189,13 @@ body {
     margin: 20px auto;
 
     max-width: 100%;
+
+    height: max-content;
 }
 
 @media (min-width: 1000px) {
 
     .Paper {
-        height: 50vh;
         width: 25vw;
     }
     
@@ -168,6 +212,19 @@ body {
         top: 25vh;
     }
 
+}
+
+@media (max-width: 1000px) and (min-width: 500px) {
+    .Paper{
+        width: 35vw;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .Paper {
+        width: 75vw;
+    }    
 }
 
 /*End of Helpful Links*/
