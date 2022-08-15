@@ -159,7 +159,7 @@ body {
 
 
 /*Media Queries*/
-@media (min-width: 100px) {
+@media (min-width: 1000px) {
 
     #Story {
         max-width: 70%;
