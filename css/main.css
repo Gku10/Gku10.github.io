@@ -18,6 +18,10 @@ html {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     height: 100%;
     max-width: 100vw;
@@ -128,39 +132,42 @@ body {
 
 #intro p {
     margin: 10px 0 auto auto;
-    color: var(--color2);
+    color: var(--mayan-Blue);
 }
 
-/*Editting for stories*/
+/*Helpful Links*/
 
-#Links a {
-    text-decoration: none;
-    color: var(--title-color);
-    inline-size: max-content;
+.Paper {
+    background-color: rgba(0, 0, 0, 0.3);
 
-    margin: 10px 0 auto auto;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
 
-    text-align: center;
+    margin: 20px auto;
+
+    max-width: 100%;
 }
 
-#Links h1 {
-    text-align: center;
-    color: var(--title-color);
+@media (min-width: 1000px) {
+
+    .Paper {
+        height: 50vh;
+        width: 25vw;
+    }
+    
+    .SD {
+        position: fixed;
+        left: 20vw;
+        top: 25vh;
+    }
+
+    .OP {
+        position: fixed;
+
+        right: 20vw;
+        top: 25vh;
+    }
+
 }
 
-.frame {
-    height: 15%;
-    width: 75%;
-
-    margin: 5% auto;
-
-    border: 1.5px solid var(--mayan-Blue);
-    border-radius: 5px;
-}
-
-.frame p {
-    margin: 5px 5px auto auto;
-}
-span {
-    color: var(--mayan-Green);
-}
+/*End of Helpful Links*/
