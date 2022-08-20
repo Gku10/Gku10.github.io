@@ -233,6 +233,8 @@ model-viewer {
     #main-content .Description {
         height: 100%;
         width: 50%;
+
+        margin: auto;
     
         display: block;
     }
@@ -250,10 +252,16 @@ model-viewer {
     
         color: var(--text-color1-2);
         font-weight: bolder;
+
+        max-width: 60%;
+
+        margin: auto;
+        margin-left: 30%;
     }
     
     #main-content .Description ul li{
-        margin: 5% auto;
+        margin: 10% auto;
+        font-size: 20px;
     }
     
 }
@@ -332,7 +340,7 @@ model-viewer {
     
         display: block;
 
-        padding-top: 10%;
+        margin: auto;
     }
     
     #main-content .Description h2 {
@@ -348,12 +356,17 @@ model-viewer {
     
         color: var(--text-color1-2);
         font-weight: bolder;
-    
-        max-width: 90%;
+
+        max-width: 80%;
+
+        margin: auto;
+        margin-left: 15%;
     }
     
     #main-content .Description ul li{
-        margin: 5% auto;
+        margin: auto;
+        margin-top: 10%;
+        font-size: 16px;
     }
     
 }
@@ -432,7 +445,9 @@ model-viewer {
     
         display: block;
 
-        padding-top: 10%;
+        margin: auto;
+
+        padding-top: 2vh;
     }
     
     #main-content .Description h2 {
@@ -449,11 +464,14 @@ model-viewer {
         color: var(--text-color1-2);
         font-weight: bolder;
     
-        max-width: 90%;
+        max-width: 80%;
+
+        margin: auto;
     }
     
     #main-content .Description ul li{
-        margin: 5% auto;
+        margin: auto;
+        margin-top: 10%;
     }
     
 }
@@ -514,8 +532,6 @@ model-viewer {
     #slideshows .left-slide {
         height: 100%;
         width: 100%;
-
-        padding-top: 215h;
     
         display: block;
     }
@@ -558,14 +574,12 @@ model-viewer {
     
         max-width: 100%;
 
-        padding-top: 20px;
-
         margin-right: 20%;
         margin-left: 0;
     }
     
     #main-content .Description ul li{
-        margin: 5% auto;
+        margin: 10% auto;
         max-width: 100%;
 
         margin-right: 20%;
