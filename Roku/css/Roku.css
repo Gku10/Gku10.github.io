@@ -412,6 +412,8 @@ model-viewer {
         max-height: 150px;
         object-fit: cover;
 
+        margin-top: 3vh;
+
         opacity: 0.8;
 
         border-radius: 10px;
@@ -522,6 +524,8 @@ model-viewer {
         max-height: 125px;
         object-fit: cover;
 
+        margin-left: 5%;
+
         opacity: 0.8;
 
         border-radius: 10px;
@@ -532,15 +536,19 @@ model-viewer {
     #slideshows .left-slide {
         height: 100%;
         width: 100%;
+
+        margin-right: 10%;
     
         display: block;
     }
     
     .bottom-slide img {
         width: 70%;
-        max-width: 100px;
-        max-height: 150px;
+        max-width: 125px;
+        max-height: 175px;
         object-fit: cover;
+
+        margin-top: 5vh;
 
         opacity: 0.8;
 
@@ -579,9 +587,9 @@ model-viewer {
     }
     
     #main-content .Description ul li{
-        margin: 10% auto;
         max-width: 100%;
 
+        margin-top: 10%;
         margin-right: 20%;
         margin-left: 0;
     }
