@@ -126,6 +126,8 @@ model-viewer {
 #Contact-info p {
     margin: auto;
 
+    max-width: 90%;
+
     text-align: center;
 
     padding-top: 5px;
@@ -248,8 +250,6 @@ model-viewer {
     
         color: var(--text-color1-2);
         font-weight: bolder;
-    
-        max-width: 90%;
     }
     
     #main-content .Description ul li{
@@ -460,16 +460,18 @@ model-viewer {
 
 @media (max-width: 600px) {
     #main-content {
-        height: 80vh;
         width: 80vw;
     
         position: fixed;
-        top: 12vh;
+        top: 10vh;
         left: 10vw;
+
+        padding-bottom: 10vh;
     
         margin: auto;
     
         display: flex;
+        flex-direction: column-reverse;
     }
     
     #main-content #slideshows {
@@ -477,22 +479,23 @@ model-viewer {
         width: 100%;
     
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
 
-        padding-top: 5%;
+        position: absolute;
+        top: 8vh;
     }
     
     #slideshows .Slide {
         display: block;
-
-        padding-left: 5%;
     }
     
-    #slideshows .top-slide {
-        height: 40%;
+    #slideshows .left-slide {
+        height: 100%;
         width: 100%;
 
-        padding-top: 15%;
+        padding-top: 60%;
+        padding-left: 22%;
+        padding-right: 0;
     }
     
     .top-slide img {
@@ -508,8 +511,8 @@ model-viewer {
         box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.8);
     }
     
-    #slideshows .bottom-slide {
-        height: 60%;
+    #slideshows .right-slide {
+        height: 100%;
         width: 100%;
 
         padding-bottom: 10%;
@@ -550,10 +553,12 @@ model-viewer {
     #main-content .Description ul{
         inline-size: max-content;
     
-        color: var(--text-color1-2);
+        color: var(--text-color1);
         font-weight: bolder;
     
-        max-width: 80%;
+        max-width: 100%;
+
+        padding-top: 20px;
 
         margin-right: 20%;
         margin-left: 0;
@@ -653,7 +658,7 @@ model-viewer {
 
 @media (max-width: 500px) {
     model-viewer {
-        opacity: 0.3;
+        opacity: 0.2;
     }
 }
 
