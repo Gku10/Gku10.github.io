@@ -515,7 +515,7 @@ model-viewer {
         height: 100%;
         width: 100%;
 
-        padding-bottom: 10%;
+        padding-top: 20vh;
     
         display: block;
     }
@@ -529,9 +529,6 @@ model-viewer {
         opacity: 0.8;
 
         border-radius: 10px;
-
-        position: relative;
-        bottom: 0;
 
         box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.8);
     }
