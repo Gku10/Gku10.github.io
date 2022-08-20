@@ -557,8 +557,6 @@ model-viewer {
 
         margin-right: 20%;
         margin-left: 0;
-
-        border: 2px solid white;
     }
     
     #main-content .Description ul li{
@@ -567,8 +565,6 @@ model-viewer {
 
         margin-right: 20%;
         margin-left: 0;
-
-        border: 2px solid red;
     }
     
 }
