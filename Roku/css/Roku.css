@@ -552,16 +552,23 @@ model-viewer {
     
         color: var(--text-color1-2);
         font-weight: bolder;
-        
-        margin: auto;
     
         max-width: 80%;
+
+        margin-right: 20%;
+        margin-left: 0;
+
+        border: 2px solid white;
     }
     
     #main-content .Description ul li{
         margin: 5% auto;
-        
-        max-width: 80%;
+        max-width: 100%;
+
+        margin-right: 20%;
+        margin-left: 0;
+
+        border: 2px solid red;
     }
     
 }
