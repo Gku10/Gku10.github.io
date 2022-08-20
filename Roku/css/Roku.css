@@ -483,17 +483,19 @@ model-viewer {
 
         position: absolute;
         top: 8vh;
+
+        border: 2px solid white;
     }
     
     #slideshows .Slide {
         display: block;
     }
     
-    #slideshows .left-slide {
+    #slideshows .right-slide {
         height: 100%;
         width: 100%;
 
-        padding-top: 60%;
+        padding-top: 40vh;
         padding-left: 22%;
         padding-right: 0;
     }
@@ -511,11 +513,11 @@ model-viewer {
         box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.8);
     }
     
-    #slideshows .right-slide {
+    #slideshows .left-slide {
         height: 100%;
         width: 100%;
 
-        padding-top: 20vh;
+        padding-top: 215h;
     
         display: block;
     }
