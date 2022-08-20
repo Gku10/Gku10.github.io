@@ -553,11 +553,13 @@ model-viewer {
         color: var(--text-color1-2);
         font-weight: bolder;
     
-        max-width: 90%;
+        max-width: 80%;
     }
     
     #main-content .Description ul li{
         margin: 5% auto;
+        
+        max-width: 100%;
     }
     
 }
