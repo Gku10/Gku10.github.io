@@ -45,12 +45,9 @@
 
     <div id="Contact-info">
         <div class="top-info">
-            <p><i href="#" class="social-icons fa fa-whatsapp"></i> (+52) 613-109-8024</p>
+            <p><span class="w-app"></span><i href="#" class="social-icons w-app fa fa-whatsapp"></i><span id="e-mail"></span> (+52) 613-109-8024</p>
+            <p><span class="e-mail"><i href="#" class="social-icons fa fa-envelope"></i></span> arqui.rosalbaku@rokuconstrucciones.com</p>
         </div> 
-           
-        <div class="bottom-info">
-            <p class="bottom">Calle Dos s/n, Miramar, 23880 Loreto, B.C.S.</p>
-        </div>
     </div>
 
     <div id="main-content">
@@ -58,12 +55,20 @@
         <div id="slideshows">
             <div class="Slide top-slide">
 
-                <div class="mySlides2">
+                <div class="mySlides2 fade2">
                     <img src="assets/Lecturing.jpg">
                 </div>
             
-                <div class="mySlides2">
+                <div class="mySlides2 fade2">
                     <img src="assets/Transformador.jpg">
+                </div>
+
+                <div class="mySlides2 fade2">
+                    <img src="assets/Measuring.jpeg">
+                </div>
+
+                <div class="mySlides2 fade2">
+                    <img src="assets/Posing2.jpg">
                 </div>
             
                 <script>
@@ -79,7 +84,7 @@
                     slideIndex2++;
                     if (slideIndex2 > slides2.length) {slideIndex2 = 1}
                     slides2[slideIndex2-1].style.display = "block";
-                    setTimeout(showSlides2, 5000); // Change image every 4 seconds
+                    setTimeout(showSlides2, 7000); // Change image every n seconds
                 }
                 </script>
 
@@ -87,16 +92,28 @@
 
             <div class="Slide bottom-slide">
                 
-                <div class="mySlides1">
+                <div class="mySlides1 fade">
                     <img src="assets/Novidesa.jpg">
                 </div>
                 
-                <div class="mySlides1">
+                <div class="mySlides1 fade">
                     <img src="assets/Posing.jpg" >
                 </div>
             
-                <div class="mySlides1">
-                    <img src="assets/Posing2.jpg">
+                <div class="mySlides1 fade">
+                    <img src="assets/Posing3.jpeg">
+                </div>
+
+                <div class="mySlides1 fade">
+                    <img src="assets/Selfie.jpeg">
+                </div>
+
+                <div class="mySlides1 fade">
+                    <img src="assets/Construction_site.jpeg">
+                </div>
+
+                <div class="mySlides1 fade">
+                    <img src="assets/Selfie2.jpeg">
                 </div>
             
                 <script>
@@ -112,7 +129,7 @@
                     slideIndex++;
                     if (slideIndex > slides.length) {slideIndex = 1}
                     slides[slideIndex-1].style.display = "block";
-                    setTimeout(showSlides, 5000); // Change image every 4 seconds
+                    setTimeout(showSlides, 5000); // Change image every i seconds
                 }
                 </script>
             </div>
