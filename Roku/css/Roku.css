@@ -43,7 +43,7 @@ body {
 }
 
 model-viewer {
-    height: 75vmin;
+    height: 75vh;
 
     margin: auto;
 
