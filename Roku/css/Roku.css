@@ -544,8 +544,8 @@ model-viewer {
     
     .bottom-slide img {
         width: 70%;
-        max-width: 125px;
-        max-height: 175px;
+        max-width: 150px;
+        max-height: 200px;
         object-fit: cover;
 
         margin-top: 5vh;
