@@ -483,8 +483,6 @@ model-viewer {
 
         position: absolute;
         top: 8vh;
-
-        border: 2px solid white;
     }
     
     #slideshows .Slide {
