@@ -104,13 +104,95 @@ model-viewer {
     border: 1px solid rgba(255, 255, 255, 0.4);
 
     margin: auto;
-    padding: 1%;
+    padding: 0.25%;
 
     position: relative;
-    top: 65%;
+    top: 10%;
 }
 
+.Arqui {
+    position: relative;
+    top: 60vh;
+
+    inline-size: max-content;
+
+    color: var(--text-color1);
+    font-weight: bolder;
+    font-size: 20px;
+
+    background: var(--info-color1);
+
+    border-radius: 5px;
+    box-shadow: -4px 4px 4px black;
+
+    padding: 3px;
+}
+
+.Arqui:hover {
+    background-color: var(--color-main);
+
+    z-index: 4;
+
+    transform: scale(1.25);
+}
+
+/*Background Media Responce*/
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 65px;
+        margin-left: 20px;
+    }
+    #backGround h2 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1000px) and (min-width: 750px) {
+    #backGround h1 {
+        font-size: 50px;
+    }
+
+    #backGround h2 {
+        font-size: 14px;
+    }
+
+    model-viewer {
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 750px) and (min-width: 600px) {
+    #backGround h1 {
+        font-size: 50px;
+    }
+
+    #backGround h2 {
+        font-size: 12px;
+    }
+
+    model-viewer {
+        opacity: 0.3;
+    }
+}
+
+
+@media (max-width: 600px) {
+    model-viewer {
+        opacity: 0.2;
+    }
+    #backGround h2 {
+        font-size: 10px;
+    }
+    #backGround .Arqui {
+        top: 68vh;
+    }
+}
+/*End of Background media*/
 /*End Background Styling*/
+
+
 
 /*Contact info*/
 #Contact-info {
@@ -121,6 +203,7 @@ model-viewer {
 
     position: fixed;
     z-index: 3;
+    pointer-events: none;
 }
 
 #Contact-info p {
@@ -162,6 +245,21 @@ model-viewer {
     padding-top: 3vh;
 }
 
+.animation1:hover {
+    background-color: var(--color-main);
+    
+    color: white;
+
+    border-radius: 5px;
+
+    inline-size: max-content;
+
+    padding: 3px;
+
+    pointer-events: all !important;
+}
+
+
 @media (min-width: 1000px) {
     #main-content {
         height: 80vh;
@@ -175,7 +273,7 @@ model-viewer {
     
         display: flex;
     }
-    
+
     #main-content #slideshows {
         height: 100%;
         width: 50%;
@@ -191,7 +289,7 @@ model-viewer {
     }
     
     #slideshows .top-slide {
-        height: 40%;
+        height: 60%;
         width: 100%;
 
         padding-top: 3%;
@@ -265,6 +363,9 @@ model-viewer {
     }
     
 }
+
+
+
 
 @media (max-width: 1000px) and (min-width: 750px) {
     #main-content {
@@ -371,6 +472,9 @@ model-viewer {
     
 }
 
+
+
+
 @media (max-width: 750px) and (min-width: 600px) {
     #main-content {
         height: 80vh;
@@ -454,9 +558,9 @@ model-viewer {
     
     #main-content .Description h2 {
         color: var(--text-color1);
-    
-        inline-size: max-content;
-    
+        
+        text-align: center;
+
         margin-top: 10%;
     } 
     
@@ -474,9 +578,13 @@ model-viewer {
     #main-content .Description ul li{
         margin: auto;
         margin-top: 10%;
+        margin-left: 20%;
     }
     
 }
+
+
+
 
 @media (max-width: 600px) {
     #main-content {
@@ -563,7 +671,7 @@ model-viewer {
     
         display: block;
 
-        padding-top: 10%;
+        padding-top: 15%;
     }
     
     #main-content .Description h2 {
@@ -593,7 +701,10 @@ model-viewer {
         margin-right: 20%;
         margin-left: 0;
     }
-    
+
+    .animation1:hover {
+        
+    }
 }
 /*End of Main Content*/
 
@@ -650,38 +761,9 @@ model-viewer {
 }
 /*End of Slideshow animation*/
 
-/*Media Responce*/
 
-@media (min-width: 850px) {
-    h1 {
-        font-size: 65px;
-        margin-left: 20px;
-    }
-    h2 {
-        font-size: 25px;
-    }
+/*Animations*/
+@keyframes list-carousel {
+    
 }
-
-
-@media (max-width: 850px) and (min-width: 500px) {
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        top: 90%;
-        left: 5%;
-    }
-
-    model-viewer {
-        opacity: 0.3;
-    }
-}
-
-@media (max-width: 500px) {
-    model-viewer {
-        opacity: 0.2;
-    }
-}
-
-/*End of media*/
+/*End of Animation*/
