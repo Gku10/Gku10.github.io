@@ -130,9 +130,6 @@ model-viewer {
 
 .Arqui:hover {
     background-color: var(--color-main);
-
-    z-index: 4;
-
     transform: scale(1.25);
 }
 
@@ -187,6 +184,8 @@ model-viewer {
     }
     #backGround .Arqui {
         top: 68vh;
+
+        z-index: 4;
     }
 }
 /*End of Background media*/
@@ -700,10 +699,9 @@ model-viewer {
         margin-top: 10%;
         margin-right: 20%;
         margin-left: 0;
-    }
 
-    .animation1:hover {
-        
+        position: relative;
+        z-index: 0;
     }
 }
 /*End of Main Content*/
