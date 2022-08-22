@@ -109,30 +109,6 @@ model-viewer {
     position: relative;
     top: 10%;
 }
-
-.Arqui {
-    position: relative;
-    top: 60vh;
-
-    inline-size: max-content;
-
-    color: var(--text-color1);
-    font-weight: bolder;
-    font-size: 20px;
-
-    background: var(--info-color1);
-
-    border-radius: 5px;
-    box-shadow: -4px 4px 4px black;
-
-    padding: 3px;
-}
-
-.Arqui:hover {
-    background-color: var(--color-main);
-    transform: scale(1.25);
-}
-
 /*Background Media Responce*/
 
 @media (min-width: 1000px) {
@@ -181,11 +157,6 @@ model-viewer {
     }
     #backGround h2 {
         font-size: 10px;
-    }
-    #backGround .Arqui {
-        top: 68vh;
-
-        z-index: 4;
     }
 }
 /*End of Background media*/
@@ -247,16 +218,37 @@ model-viewer {
 .animation1:hover {
     background-color: var(--color-main);
     
-    color: white;
+    color: var(--text-color1);
 
     border-radius: 5px;
+    box-shadow: -8px 8px 2px rgba(0, 0, 0, 0.8);
+
+    padding: 3px;
+}
+
+.Arqui {
+    position: relative;
+    top: 78vh;
 
     inline-size: max-content;
 
-    padding: 3px;
+    color: var(--text-color1);
+    font-weight: bolder;
+    font-size: 20px;
 
-    pointer-events: all !important;
+    background: var(--info-color1);
+
+    border-radius: 5px;
+    box-shadow: -4px 4px 2px rgba(0, 0, 0, 0.8);
+
+    padding: 3px;
 }
+
+.Arqui:hover {
+    background-color: var(--color-main);
+    transform: scale(1.25);
+}
+
 
 
 @media (min-width: 1000px) {
@@ -670,6 +662,8 @@ model-viewer {
     
         display: block;
 
+        z-index: 1;
+
         padding-top: 15%;
     }
     
@@ -699,9 +693,6 @@ model-viewer {
         margin-top: 10%;
         margin-right: 20%;
         margin-left: 0;
-
-        position: relative;
-        z-index: 0;
     }
 }
 /*End of Main Content*/
