@@ -1,0 +1,312 @@
+:root {
+    --color-main: rgb(30, 29, 88);
+    --text-color1: rgb(185, 140, 67);
+    --text-color1-2: rgb(205, 160, 80);
+    --text-color2: rgb(168, 169, 173);
+    --text-color3: rgb(46, 48, 141);
+
+    /*Contat info colors*/
+    --info-color1: rgb(106, 108, 165);
+    --info-color2: rgb(120, 122, 171);
+    --whatsapp-color: #25D366;
+}
+
+* {
+    box-sizing:border-box;
+    margin: auto;
+}
+
+/*Info Styling*/
+#Info {
+    height: 10vh;
+    min-height: 60px;
+
+    width: 100vw;
+
+    position: fixed;
+    z-index: 3;
+
+    background-color: var(--info-color1);
+}
+
+#Call .w-app {
+    color: var(--whatsapp-color);
+    
+    font-size: 25px;;
+}
+
+#E-Mail .e-mail {
+    color: white;
+    
+    font-size: 25px;
+}
+
+/*Info Media responce*/
+
+@media (min-width: 800px) {
+    #Contact {
+        height: 100%;
+        max-width: 100%;
+    
+        display: flex;
+    }
+    
+    #Call {
+        display: flex;
+    }
+    
+    #E-Mail {
+        display: flex;
+    }
+    
+    #Call p, #E-Mail p {
+        inline-size: max-content;
+        margin: 5px;
+    }
+    
+    #name h1 {
+        inline-size: max-content;
+    }
+}
+
+@media (max-width: 800px) {
+    #Info {
+        height: 10vh;
+        width: 15vw;
+        position: absolute;
+    }
+    
+    #Contact {
+        height: 100%;
+
+        max-height: 10vh;
+    }
+
+    i {
+        font-size: 20px !important;
+    }
+
+    #Call, #E-Mail {
+        inline-size: max-content;
+        align-items: center;
+    }
+
+    #name, #Call .call, #E-Mail .e-address {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+}
+/*End of Info media responce*/
+/*End of Info Styling*/
+
+
+/*Navbar Styling*/
+#navBar {
+    height: 100vh;
+
+    width: 10vw;
+    min-width: 100px;
+
+    position: fixed;
+    z-index: 2;
+
+    background-color: var(--color-main);
+}
+
+#navBar img {
+    max-width: 75px;
+}
+
+#navBar li {
+    color: var(--text-color1);
+
+    text-align: left;
+
+    max-width: 100%;
+
+    margin: 10px 0; 
+
+    border: 1px solid var(--info-color1);
+}
+
+/*Navbar media responce*/
+@media (min-width: 800px) {
+    #nav-Content {        
+        min-height: 200px;
+
+        margin-top: 70px;
+
+        position: relative;
+
+        border: 2px solid green;
+    }
+
+    #navBar .Arq, #navBar .navMenu {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    #navBar ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        height: 300px;
+
+        padding: 0;
+
+        list-style: none;
+    }
+
+    #navMenu {
+        padding: 0;
+        border: none;
+    }
+}
+
+@media (max-width: 800px) {
+    #navBar {
+        height: 10vh;
+        min-height: 60px;
+
+        width: 85vw;
+
+        top: 0;
+        right: 0;
+
+        padding-top: 0;
+    }
+
+    #nav-Content {
+        display: flex;
+        flex-direction: row;
+
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+    }
+
+    #navBar img {
+        max-height: 8vh;
+        min-height: 60px;
+
+        position: relative;
+        left: 0;
+
+        margin: 0;
+    }
+
+
+    #navBar .Arq {
+        inline-size: max-content;
+
+        color: var(--text-color1);
+
+        position: relative;
+
+        padding: 0 10%;
+    }
+
+    .Arq h1 {
+        font-size: 20px;
+    }
+
+
+    #navBar .hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+
+    }
+
+    #navBar button {
+        background-color: var(--info-color1);
+    }
+
+    #navBar .divider {
+        height: 5px;
+        width: 15px;
+        
+        margin: 2px 0;
+        
+        background-color: black;
+        border: 2px solid black;
+    }
+}
+
+/*End of Navbar media Styling*/
+
+/*End of Navbar stryling*/
+
+
+/*Background stryling*/
+#backGround{
+    height: 90vh;
+    width: 95vw;
+    
+    position: fixed;
+    z-index: -3;
+    right: 0;
+    bottom: 0;
+
+    background: radial-gradient(
+        circle at center left,
+        #1E1D57 0,
+        #252567 10%,
+        #4E4E98 60%,
+        #57589F 100%);
+}
+
+/*Back ground media responce*/
+@media (max-width: 800px) {
+    #backGround {
+        width: 100vw;
+    }
+}
+/*End of Background media responce*/
+/*End of Background Styling*/
+
+
+
+/*Other*/
+button.w-app {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 50%;
+}
+
+button.e-mail {
+    background-color: transparent;
+    border: transparent;
+    border-radius: 2px;
+}
+
+button:hover {
+    border: 2px solid black;
+    box-shadow: -4px 4px black;
+
+    transform: scale(1.25);
+}
