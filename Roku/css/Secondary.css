@@ -14,6 +14,7 @@
 * {
     box-sizing:border-box;
     margin: auto;
+    padding: auto;
 }
 
 /*Info Styling*/
@@ -66,14 +67,20 @@
     
     #name h1 {
         inline-size: max-content;
+        color: var(--text-color1);
+
+        background-color: var(--color-main);
+        border-radius: 5px;
+
+        padding: 0 2px;
     }
 }
 
 @media (max-width: 800px) {
     #Info {
         height: 10vh;
-        width: 15vw;
-        position: absolute;
+        width: 13vw;
+        position: fixed;
     }
     
     #Contact {
@@ -118,10 +125,14 @@
     z-index: 2;
 
     background-color: var(--color-main);
+
+    padding-right: 0;
 }
 
 #navBar img {
     max-width: 75px;
+
+    opacity: 0.8;
 }
 
 #navBar li {
@@ -189,6 +200,8 @@
         right: 0;
 
         padding-top: 0;
+
+        position: fixed;
     }
 
     #nav-Content {
@@ -198,7 +211,7 @@
         position: absolute;
         left: 0;
 
-        width: 100%;
+        width: 90%;
     }
 
     #navBar img {
@@ -206,7 +219,7 @@
         min-height: 60px;
 
         position: relative;
-        left: 0;
+        left: 8px;
 
         margin: 0;
     }
@@ -223,7 +236,7 @@
     }
 
     .Arq h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
@@ -240,7 +253,7 @@
 
     }
 
-    #navBar button {
+    #navMenu {
         background-color: var(--info-color1);
     }
 
@@ -308,3 +321,80 @@ button:hover {
 
     transform: scale(1.25);
 }
+
+#ArquiName {
+    padding: none;
+    border: none;
+    margin: none;
+    background-color: transparent;
+
+}
+
+#Arqui {
+    background-color: transparent;
+    color: var(--text-color1);
+}
+
+#ArquiName:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -4px 4px black;
+
+    transform: scale(.90);
+}
+
+img:hover, li:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: -4px 4px black;
+
+    transform: scale(.90);
+}
+
+
+/*Main doc styling*/
+
+#main-con h1, #main-con p{
+    inline-size: max-content;
+}
+
+@media (min-width: 800px) {
+    #main-doc {
+        height: 100vh;
+        width: 100vw;
+
+        position: absolute;
+    
+        margin: none;
+    
+        padding-top: 70px;
+        padding-left: 10vw;
+        padding-right: 0;
+    }
+    
+    #main-con {
+    margin: 0 auto;
+    padding: 10px 0 30px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    #main-doc {
+        height: 100vh;
+        width: 100vw;
+    
+        position: absolute;
+    
+        margin: none;
+    
+        padding-top: 70px;
+    }
+    
+    #main-con {
+    padding-top: 10px;
+    margin: auto;
+    }
+}
+
+
+/*End of Main doc styling*/
