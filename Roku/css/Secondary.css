@@ -79,7 +79,7 @@
 @media (max-width: 800px) {
     #Info {
         height: 10vh;
-        width: 13vw;
+        width: 15vw;
         position: fixed;
     }
     
@@ -219,7 +219,7 @@
         min-height: 60px;
 
         position: relative;
-        left: 8px;
+        left: 20px;
 
         margin: 0;
     }
