@@ -25,9 +25,9 @@ html{
 body{
     height: 11in;
     width: 8.5in;
-    
+
     padding: 20px;
-    
+
     display: flex;
 }
 
@@ -135,6 +135,8 @@ h1{
     font-weight: bolder;
     padding: 5px;
 
+    font-size: 15px;
+
     text-decoration: underline;
 }
 
@@ -222,6 +224,8 @@ h1{
     font-weight: bold;
     padding: 0;
     padding-left: 18px;
+    
+    font-size: 15px;
 
     text-decoration: underline;
 }
@@ -229,7 +233,7 @@ h1{
 .skill{
     padding: 1px 40px;
 
-    font-size: 16px;
+    font-size: 15px;
 
     color: navy;
 
@@ -237,7 +241,7 @@ h1{
 }
 
 .skill-description{
-    font-size: 12px;
+    font-size: 10px;
 
 
     padding-right: 30px;
@@ -353,26 +357,26 @@ h1{
     margin-left: 25px;
     font-weight: bold;
 
-    font-size: 16px;
+    font-size: 15px;
 
     padding: 2px;
 }
 .Roll span{
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .Roll-Description{
     margin-left: 65px;
-    padding: 2px;
+    padding: 3px;
 
-    font-size: 16px;
+    font-size: 14px;
 }
 
 
 /*Lists*/
 #lists{
-    font-size: 14px;
+    font-size: 12px;
 
     margin-left: 150px;
 }
@@ -392,8 +396,8 @@ h1{
 }
 
 #lists2 p{
-    padding: 2px;
-    font-size: 16px;
+    padding: 3px;
+    font-size: 14px;
 }
 
 #Inline p{
@@ -413,7 +417,7 @@ h1{
 #Projects p{
     padding: 4px;
 
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /*End of Projects*/
