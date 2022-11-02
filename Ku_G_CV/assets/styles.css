@@ -29,6 +29,8 @@ body{
     width: 8.5in;
     
     padding: 20px;
+    
+    display: flex;
 }
 
 
