@@ -426,3 +426,9 @@ h1{
 .blue{
     color: navy;
 }
+
+.smaller{
+    font-size: 20px;
+
+    font-weight: bolder;
+}
