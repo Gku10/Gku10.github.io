@@ -174,7 +174,7 @@ body{
     height: 92vh;
 
     position: fixed;
-    top: 8vh;
+    top: 85.5px;
     left: -100vw;
 
     border: 1px solid var(--main-Black);
