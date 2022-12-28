@@ -1,0 +1,619 @@
+:root{
+
+    /*Primary colors*/
+
+    --main-White: #fff;
+    --main-Black: #000;
+    --main-Sand: #9a8a77;
+    --main-Sage: #7B9975;
+
+    /*Other Colors*/
+
+    --secondary-Sea: #7FCFD9;
+    --secondary-Sun: #F6B565;
+    --secondary-Kale: #25474E;
+    --secondary-Concrete: #999;
+
+
+
+
+}
+
+
+* {
+    box-sizing:border-box;
+    margin: auto;
+}
+
+
+
+
+body{
+    display: flex;
+}
+
+
+
+
+/*Horizontal Media editing*/
+@media (min-width: 10in) {
+
+    #popUpVertical{
+        visibility: hidden;
+    }
+
+    /*Top Bar edditing*/
+
+    #topBar{
+        width: 100vw;
+        height: 2.25cm;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        border: 1px solid var(--main-Black);
+
+        background-color: var(--main-Sand);
+
+
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    #barSubSect{
+        width: 33.33%;
+        height: 100%;
+    }
+
+    .Name div{
+        width: 5.5cm;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Name img{
+        height: 100%;
+        width: 100%;
+    }    
+
+    .topRightButtons{
+        display: flex;
+    }
+
+
+    .topRightButtons div{
+        width: 50%;
+        height: 100%;
+
+        border: 10px solid var(--main-Sage);
+    }
+
+    .topRightButtons button{
+        height: 100%;
+        width: 100%;
+
+        font-size: 25px;
+
+        font-weight: bolder;
+
+        background-color: var(--secondary-Concrete);
+    }
+
+
+    #aventurasHidden{
+        position: fixed;
+        right: -100vw;
+
+        font-size: 20px;
+
+        border: 2px solid black;
+        background-color: white;
+
+        height: 50px;
+        width: 400px;
+        top: 90px;
+    }
+
+
+
+    .sectionName{
+        text-align: center;
+
+        font-size: 20px;
+
+        display: flex;
+
+        background-color: var(--main-Sage);
+    }
+
+
+
+
+
+
+
+
+    #topBarMenu{
+        height: 100%;
+        width: 5.2cm;
+
+        display: flex;
+
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+    #topBarSectionName{
+        height: 100%;
+        width:  calc(100% - 5.2cm);
+        background-color: var(--main-Sand);
+    }
+
+
+    /*end of topBar*/
+
+
+
+    /*Left menue styling*/
+
+
+    #popupMenu{
+        height: 60px;
+        width: 100px;
+
+        border: 2px solid var(--main-Sage);
+
+        background-color: var(--main-Sand);
+
+        border-radius: 0 0 15px 0;
+
+        position: fixed;
+        left: 0px;
+        top: 85px;
+
+        visibility: hidden;
+    }
+
+    #popupMenu .enclosure{
+        height: 80%;
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line{
+        width: 80%;
+
+        border-bottom: 5px solid black;
+    }
+
+
+    #leftMenu{
+        width: 5.2cm;
+        height: 100vh;
+
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        z-index: 5;
+
+        border: 1px solid var(--secondary-Sea);
+        border-top: none;
+
+        background-color: var(--main-Sand);
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    #leftMenu .subSec{
+
+        height: 2.75cm;
+        width: 5cm;
+
+        background-color: var(--main-White);
+
+        border: 0.35cm solid var(--main-Sage);
+
+
+        font-size: 28px;
+
+        text-align: left;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #leftMenu .leftMenuTitle{
+        height: 2cm;
+        width: 5cm;
+
+        background-color: var(--main-White);
+
+        border: 0.30cm solid var(--main-Sage);
+
+
+        font-size: 28px;
+
+        text-align: left;
+
+        display: flex;
+    }
+
+    #leftMenu p{
+        inline-size: max-content;
+        max-width: 100%;
+    }
+
+    .groupsPackages p, .spa p, .location p{
+        font-size: 22px;
+    }
+
+    .imgGallery p{
+        font-size: 25px;
+    }
+
+
+    /*Hidden text cards*/
+
+    #hiddenText{
+        width: 10cm;
+        height: 175px;
+
+        visibility: hidden;
+
+        border: 2px solid black;
+        background-color: white;
+
+        border-radius: 0 0 20% 0;
+
+        position: absolute;
+        left: 5.15cm;
+
+        z-index: 5;
+    }
+
+    #hiddenText p{
+        font-size: 25px;
+    }
+
+
+    .suits{
+        top: 85px;
+    }
+
+    .groups{
+        top: calc(15vh + 85px);
+    }
+
+    .spaAmmenities{
+        top: 30vh;
+    }
+
+    .diner{
+        top: calc(45vh +85px);
+    }
+
+    .experience{
+        bottom: calc(15vh);
+    }
+
+    .gallery{
+        bottom: 0;
+    }
+
+
+
+
+    /*weather settings*/
+
+    #weather{
+        height: 25vh;
+        width: 22vw;
+
+        position: fixed;
+        right: 0;
+        top: 40vh;
+    }
+
+    /*End of weather*/
+
+
+    #mainContent{
+        display: flex;
+
+        padding: 5%;
+    }
+
+    #mainContent h2{
+        inline-size: max-content;
+
+        margin-bottom: 40px;
+    }
+
+
+    #mainContent p{
+        font-size: 30px;
+    }
+
+
+
+
+
+    #mediaPlayer{
+        height: 600px;
+        width: 1000px;
+    }
+
+    #mediaPlayer video{
+        width: 960px;
+        height: 560px;
+    }
+        
+}
+
+/*End of Horizontal media*/
+
+
+/*Vertical Media editign*/
+@media (max-width: 10in) {
+    #topBar{
+        width: 100vw;
+        height: 2cm;
+
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        border: 1px solid var(--main-Black);
+
+        background-color: var(--main-Sand);
+
+
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    .Name{
+        width: 40%;
+        height: 100%;
+    }
+    
+
+    .Name div{
+        width: 5cm;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Name img{
+        height: 100%;
+        width: 100%;
+    }    
+
+
+
+
+
+
+
+
+
+    .topRightButtons{
+        height: 100%;
+        width: 45%;
+
+        display: flex;
+    }
+
+
+    .topRightButtons div{
+        width: 50%;
+        height: 100%;
+
+        border: 5px solid var(--main-Sage);
+    }
+
+    .topRightButtons button{
+        height: 100%;
+        width: 100%;
+
+        font-size: 15px;
+
+        font-weight: bolder;
+
+        background-color: var(--secondary-Concrete);
+    }
+
+
+    #aventurasHidden{
+        position: fixed;
+        right: -100vw;
+
+        font-size: 20px;
+
+        border: 2px solid black;
+        background-color: white;
+
+        height: 50px;
+        width: 400px;
+        top: 90px;
+    }
+
+}
+
+
+
+/*Media editing for vertical screens*/
+@media (max-width: 10in) {
+    
+    #mainConeten{
+        width: 70vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    #mediaPlayer video{
+        width: 192px;
+        height: 108px;  
+    }
+
+    
+    /*Left Menu Editing*/
+
+    .sectionName{
+        height: 100%;
+        width: 15%;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    #topBarSectionName h2, #topBarMenu p{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    #topBarSectionName{
+        width: 100%;
+        height: 100%;
+    }
+
+    #topBarMenu{
+        min-width: 2cm;
+        height: 100%;
+    }
+    
+
+    /*Menu Styling*/
+
+    #popupMenu{
+        height: 100%;
+        min-width: 2cm;
+
+        border: 2px solid var(--main-Black);
+
+        background-color: var(--main-Sand);
+
+        border-radius: 0 0 15px 0;
+    }
+
+    #popupMenu .enclosure{
+        height: 80%;
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .line{
+        width: 80%;
+
+        border-bottom: 5px solid black;
+    }
+
+    /*End of Menu styling*/
+
+    #popUpVertical{
+        height: 2cm;
+        width: 100vw;
+
+        visibility: hidden;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: row;
+
+        border-bottom: 2px solid black;
+
+        background-color: white;
+
+    }
+
+    #popUpVerticalLogo{
+        height: 100%;
+        width: 85%;
+    }
+
+    #popUpVerticalLogo img{
+        height: 100%;
+        width: 40%;
+    }
+
+    #closePopUpVertical{
+        height: 100%;
+        width: 15%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        cursor: pointer;
+
+        background-color: var(--main-Sand);
+    }
+
+    #leftMenu{
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        background-color: var(--main-Sand);
+    }
+
+    .leftMenuTitle{
+    visibility: hidden;
+    }
+
+    .subSec{
+        height: 10%;
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+
+        background-color: white;
+    }
+
+    .subSec p{
+        visibility: hidden;
+        border: 2px solid red;
+    }
+
+    .subSec div p{
+        visibility: visible;
+        inline-size: 100%;
+
+        position: relative;
+        top: 0;
+    }
+    /*End of left menu editing*/
+
+    #mainContent, #weather{
+        visibility: hidden;
+    }
+
+}
