@@ -26,9 +26,9 @@ body{
     height: 11in;
     width: 8.5in;
 
-    padding: 20px;
-
     display: flex;
+
+    padding: 10px;
 }
 
 
@@ -54,6 +54,13 @@ body{
 
     width: 100%;
     height: 8%;
+}
+
+#titles .dateOfCreation{
+    position: absolute;
+    font-size: 14px;
+    margin-top: .10cm;
+    margin-left: 13.5cm;
 }
 
 h1 span{
