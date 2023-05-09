@@ -1,0 +1,445 @@
+@page {
+    size: 8.5in 11in;
+    margin: 27mm 16mm 27mm 16mm;
+}
+
+*{
+    box-sizing: border-box;
+
+    margin: auto;
+
+    font-family: 'Times New Roman', Times, serif;
+
+    max-height: 100%;
+
+}
+
+html{
+    background-color: grey;
+}
+
+
+
+
+
+body{
+    height: 11in;
+    width: 8.5in;
+
+    display: flex;
+
+    padding: 10px;
+}
+
+
+
+
+
+
+#Main-content{
+    height: 11in;
+    width: 8.5in;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#titles{
+    border-bottom: 2px solid black;
+
+    width: 100%;
+    height: 8%;
+}
+
+#titles .dateOfCreation{
+    position: absolute;
+    font-size: 14px;
+    margin-top: .10cm;
+    margin-left: 13.5cm;
+}
+
+h1 span{
+    font-size: 25px;
+    font-weight: bold;
+    color: navy;
+}
+
+
+
+
+#other-Info{
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#Top{
+    height: 70%;
+    width: 100%;
+
+    display: flex;
+}
+
+
+#Left{
+    width:25%;
+    height: 100%;
+}
+
+
+
+
+
+#Right{
+    width: 75%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+h1{
+    inline-size: max-content;
+
+    font-size: 200%;
+
+    margin-top: 1.5%;
+}
+
+
+/*Start of contact info*/
+#contact-Info{
+    height: 20%;
+    width: 100%;
+
+    border: 2px solid black;
+
+    border-left: none;
+    border-top: none;
+}
+
+
+#contact-Info p {
+    padding: 10px 8px;
+
+    font-weight: bold;
+}
+
+.sub-Header{
+    font-weight: bolder;
+    padding: 5px;
+
+    font-size: 15px;
+
+    text-decoration: underline;
+}
+
+.social{
+    display: flex;
+    
+    border-bottom: 1px solid;
+
+    width: 80%;
+
+}
+
+.us{
+    font-size: 14px;
+}
+/*End of Contact Info*/
+
+
+
+
+
+
+
+/*Start of education*/
+#education{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+
+    height: 20%;
+    width: 100%;
+
+    max-height: 20%;
+}
+
+.school, .degree{
+    font-size: 16px;
+
+    padding-left: 10px;
+}
+
+
+.degree, .njit{
+    color: navy;
+    font-weight: bolder;
+}
+
+.graduationDate{
+    padding-bottom: 0;
+    padding-right: 8px;
+
+    text-align: right;
+}
+
+.location{
+    text-align: right;
+
+    padding-right: 8px;
+}
+
+.graduationDate, .location{
+    font-size: 14px;
+}
+/*End of Education*/
+
+
+
+
+
+
+
+
+/*Start of Skills*/
+#skills{
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
+
+    height: 60%;
+    width: 100%;
+
+    max-height: 60%;
+}
+
+.sub-Header2{
+    font-weight: bold;
+    padding: 0;
+    padding-left: 18px;
+    
+    font-size: 15px;
+
+    text-decoration: underline;
+}
+
+.skill{
+    padding: 1px 40px;
+
+    font-size: 15px;
+
+    color: navy;
+
+    font-weight: bold;
+}
+
+.skill-description{
+    font-size: 10px;
+
+
+    padding-right: 30px;
+
+    padding-bottom: 4px;
+
+    text-align: right;
+}
+
+.skill-div{
+    width: 70%;
+    border-bottom: 2px solid grey;
+}
+/*End of Skills*/
+
+
+
+
+
+
+
+
+/*Start of Experience*/
+#Experience{
+    height: 92%;
+    width: 100%;
+
+    border-bottom: 2px solid black;
+}
+
+
+
+#Job{
+    height: 55%;
+    width: 100%;
+
+    border-bottom: 2px solid navy;
+}
+
+
+
+
+#Job2{
+    height: 45%;
+    width: 100%;
+}
+
+
+
+
+
+.job-Position{
+    margin-left: 25px;
+    margin-top: 2px;
+
+    padding: 1px;
+
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.job-Date{
+    margin-left: 50px;
+
+    padding: 2px;
+
+    font-size: 14px;
+
+    text-decoration: underline;
+}
+
+.Company{
+    text-align: center;
+
+    margin-left: 25px;
+
+    padding: 4px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: navy;
+}
+
+.Company span{
+    font-size: 12px;
+
+    color: black;
+
+    font-weight: normal;
+}
+
+.Supervisor{
+    margin-left: 65px;
+    padding: 1px;
+}
+
+.Supervisor span{
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.Job-Div{
+    border: 1px solid black;
+
+    width: 80%;
+
+    margin-bottom: 4px;
+}
+
+.Roll{
+    margin-left: 25px;
+    font-weight: bold;
+
+    font-size: 15px;
+
+    padding: 2px;
+}
+.Roll span{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.Roll-Description{
+    margin-left: 65px;
+    padding: 2px;
+
+    font-size: 14px;
+}
+
+
+/*Lists*/
+#lists{
+    font-size: 12px;
+
+    margin-left: 150px;
+}
+
+#Inline{
+    display: inline-block;
+
+    text-align: left;
+}
+
+#lists2{
+    font-size: 14px;
+
+    margin-top: 5px;
+
+    margin-left: 150px;
+}
+
+#lists2 p{
+    padding: 3px;
+    font-size: 14px;
+}
+
+#Inline p{
+    padding: 5px;
+}
+/*End of Experience*/
+
+
+/*Start of Projects*/
+#Projects{
+    height: 30%;
+    width: 100%;
+
+    padding: 0 5px;
+}
+
+#Projects p{
+    padding: 4px;
+
+    font-size: 15px;
+}
+
+#Projects p span{
+    font-weight: bold;
+}
+
+/*End of Projects*/
+
+
+.blue{
+    color: navy;
+}
+
+.smaller{
+    font-size: 20px;
+
+    font-weight: bolder;
+}
